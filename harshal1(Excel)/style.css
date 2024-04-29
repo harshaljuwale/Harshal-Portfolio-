@@ -335,10 +335,12 @@ main {
   background: var(--onyx);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
-  width: max-content;
+  width:max-content;
   padding: 3px 12px;
   border-radius: 8px;
+  
 }
+
 
 .info_more-btn {
   position: absolute;
@@ -466,12 +468,24 @@ main {
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
+  filter: blur(0); /* Initialize blur to 0 */
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: var(--light-gray-70); }
+.navbar-link:focus { 
+  color: var(--light-gray-70); 
+  filter: blur(0); /* Remove blur on hover */
+}
 
-.navbar-link.active { color: var(--orange-yellow-crayola); }
+.navbar-link.active { 
+  color: var(--orange-yellow-crayola); 
+  filter: blur(0); /* Remove blur on active */
+}
+
+.navbar:hover .navbar-link:not(:hover) {
+  filter: blur(1px); /* Apply blur on navbar items when navbar is hovered but the item itself isn't hovered */
+}
+
 
 
 
@@ -585,6 +599,7 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 14px;
   box-shadow: var(--shadow-1);
+  overflow: hidden;
 }
 
 .testimonials-item-title { margin-bottom: 7px; }
@@ -738,13 +753,13 @@ main {
 }
 
 .clients-item {
-  min-width: 50%;
+  min-width: auto;
   scroll-snap-align: start;
 }
 
 .clients-item img {
   width: 100%;
-  filter: sepia(1);
+  filter: sepia(1) ;
   transition: var(--transition-1);
 }
 
