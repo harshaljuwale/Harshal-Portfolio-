@@ -319,7 +319,13 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+  overflow:hidden;
+  border: 2px solid var(--orange-yellow-crayola);
  
+}
+
+.avatar-box .image{
+  filter:opacity(100%);
 }
 
 .info-content .name {
@@ -600,6 +606,7 @@ main {
   border-radius: 14px;
   box-shadow: var(--shadow-1);
   overflow: hidden;
+  border: 1px solid var(--orange-yellow-crayola);
 }
 
 .testimonials-item-title { margin-bottom: 7px; }
@@ -710,6 +717,8 @@ main {
   border-radius: 14px;
   margin-bottom: 15px;
   box-shadow: var(--shadow-2);
+  border: 1px solid var(--orange-yellow-crayola);
+  overflow: hidden;
 }
 
 .modal-img-wrapper > img { display: none; }
@@ -753,7 +762,7 @@ main {
 }
 
 .clients-item {
-  min-width: auto;
+  min-width: 50%;
   scroll-snap-align: start;
 }
 
@@ -1357,7 +1366,7 @@ border-radius: 5px;
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
+  .avatar-box { border-radius: 30px;  }
 
   .avatar-box img { width: 120px; }
 
@@ -1611,7 +1620,7 @@ border-radius: 5px;
     max-width: 680px;
   }
 
-  .modal-avatar-box img { width: 80px; }
+  .modal-avatar-box img { width: 80px;  }
 
 
 
