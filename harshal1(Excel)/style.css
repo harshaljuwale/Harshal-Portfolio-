@@ -139,7 +139,8 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black);
+body { background: var(--smoky-black); 
+  
 }
 
 
@@ -289,6 +290,7 @@ main {
   margin: 15px 12px;
   margin-bottom: 75px;
   min-width: 259px;
+  
 }
 
 
@@ -304,6 +306,7 @@ main {
   max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
+  border: 2px solid var(--orange-yellow-crayola);
 }
 
 .sidebar.active { max-height: 405px; }
@@ -1349,6 +1352,7 @@ border-radius: 5px;
   main {
     margin-top: 60px;
     margin-bottom: 100px;
+    
   }
 
 
@@ -1719,6 +1723,8 @@ border-radius: 5px;
     position: relative;
     width: max-content;
     margin: auto;
+    border: 2px solid var(--orange-yellow-crayola);
+    border-radius: 22px;
   }
 
 

@@ -133,7 +133,7 @@ for (let i = 0; i < formInputs.length; i++) {
 
   });
 }
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyR6Igz74huaUHctyVbPolUkcoJTgFn1E55sQGjqkEd6Qi2zEaHmiKV_aMH4ZOvDkTi/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx62CQwesNwgVXfCnio1X-1fYMJ4sZGx9zk9VWPNaY59mGg3cnXCIDfvWnT1CRR2ja5/exec';
 const Form = document.forms['submit-to-google-sheet'];
 
 Form.addEventListener('submit', e => {
